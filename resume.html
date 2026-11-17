@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adish Bhat — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --accent: #0e7490;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Manrope", sans-serif;
+      background: #0f172a;
+      color: var(--ink);
+    }
+
+    .toolbar {
+      width: min(820px, calc(100% - 2rem));
+      margin: 1.2rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      color: #e2e8f0;
+    }
+
+    .toolbar a,
+    .toolbar button {
+      font: inherit;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 0.6rem 0.95rem;
+      border: 1px solid rgba(226, 232, 240, 0.3);
+      background: transparent;
+      color: #f8fafc;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .toolbar .btn-docx {
+      background: #0e7490;
+      border-color: #0e7490;
+    }
+
+    .toolbar button {
+      background: #4f46e5;
+      border-color: #4f46e5;
+    }
+
+    .sheet {
+      width: min(820px, calc(100% - 2rem));
+      margin: 0 auto 2rem;
+      background: #fff;
+      padding: 2.4rem 2.5rem 2.6rem;
+      border-radius: 12px;
+    }
+
+    h1, h2 { font-family: "Syne", sans-serif; margin: 0; letter-spacing: -0.03em; }
+    h1 { font-size: 2.2rem; }
+    h2 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin: 1.3rem 0 0.45rem;
+      border-top: 1px solid var(--line);
+      padding-top: 0.8rem;
+    }
+
+    .role { margin: 0.2rem 0 0; font-weight: 700; }
+    .meta, .muted { color: var(--muted); margin: 0.15rem 0 0; }
+    .sheet a { color: var(--accent); text-decoration: none; }
+    .sheet a:hover { text-decoration: underline; }
+    .contact { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-top: 0.7rem; font-size: 0.92rem; }
+    .contact a { color: inherit; }
+    .contact a:hover { color: var(--accent); }
+    .job { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+    .project-entry { margin-top: 0.75rem; }
+    .project-entry strong { display: block; margin-bottom: 0.1rem; }
+    ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+    li { margin: 0.28rem 0; font-size: 0.95rem; line-height: 1.5; }
+    .tags { margin: 0.2rem 0 0.35rem; font-size: 0.88rem; color: var(--accent); font-weight: 600; }
+
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .sheet { width: auto; margin: 0; border-radius: 0; padding: 0; }
+      a { color: inherit; text-decoration: none; }
+    }
+
+    @media (max-width: 640px) {
+      .sheet { padding: 1.4rem; }
+      .job { flex-direction: column; gap: 0.15rem; }
+      .toolbar { flex-direction: column; align-items: stretch; }
+      .toolbar-actions { justify-content: flex-end; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">← Portfolio</a>
+    <div class="toolbar-actions">
+      <a class="btn-docx" href="assets/download/Resume.docx" download="Adish_Bhat_Resume.docx">Download .docx</a>
+      <button type="button" onclick="window.print()">Save as PDF</button>
+    </div>
+  </div>
+
+  <article class="sheet">
+    <header>
+      <h1>Adish Bhat</h1>
+      <p class="role">Software Development Engineer</p>
+      <div class="contact">
+        <span>Jammu, J&amp;K, India</span>
+        <a href="mailto:adishbhat234@gmail.com">adishbhat234@gmail.com</a>
+        <a href="tel:+917889830967">+91 7889830967</a>
+        <a href="https://github.com/aadishh" target="_blank" rel="noopener noreferrer">github.com/aadishh</a>
+        <a href="https://linkedin.com/in/adish-bhat23" target="_blank" rel="noopener noreferrer">linkedin.com/in/adish-bhat23</a>
+      </div>
+    </header>
+
+    <h2>Summary</h2>
+    <p class="muted">Software Development Engineer with ~3 years of experience building responsive, full-stack web applications with React.js, Next.js, and Node.js. Comfortable owning a feature from UI to API, with a strong learning mindset and genuine enthusiasm for trying new tools and approaches — including using AI coding assistants like Cursor to work faster and write cleaner code.</p>
+
+    <h2>Technical Skills</h2>
+    <p class="muted"><strong>Languages:</strong> Python, JavaScript, TypeScript</p>
+    <p class="muted"><strong>Frontend:</strong> React.js, Next.js, HTML5, CSS3, Responsive UI, Reusable Components</p>
+    <p class="muted"><strong>Backend:</strong> Node.js, Django, Flask, RESTful APIs</p>
+    <p class="muted"><strong>Tools:</strong> Git, GitHub, Cursor (AI-assisted coding), Agile/Scrum, VS Code</p>
+    <p class="muted"><strong>Cloud:</strong> AWS (basics), Cloud Deployment, Environment Config</p>
+    <p class="muted"><strong>AI / ML:</strong> Google Gemini API, TensorFlow, OpenCV</p>
+    <p class="muted"><strong>Other:</strong> JWT Auth, Role-Based Access Control (RBAC), PDF/DOCX Processing</p>
+
+    <h2>Professional Experience</h2>
+    <div class="job">
+      <div>
+        <strong>Software Development Engineer – I</strong>
+        <p class="meta">Carnation Infotech Pvt. Ltd. — Lucknow, Uttar Pradesh</p>
+      </div>
+      <p class="meta">Nov 2023 – Present</p>
+    </div>
+    <ul>
+      <li>Developed and optimized Next.js UIs, improving page load performance and user experience.</li>
+      <li>Engineered responsive, reusable component libraries ensuring cross-device compatibility.</li>
+      <li>Integrated RESTful APIs for dynamic data rendering, significantly reducing latency in data-heavy views.</li>
+      <li>Collaborated with backend engineers to resolve integration issues, reducing turnaround time by 15%.</li>
+      <li>Implemented JWT-based role access controls and actively contributed to Agile/Scrum sprint cycles.</li>
+    </ul>
+
+    <h2>Projects</h2>
+    
+    <div class="project-entry">
+      <strong>Resume–JD Compatibility Analyzer</strong>
+      <p class="tags">Next.js · Python · Flask · Google Gemini API · AWS</p>
+      <ul>
+        <li>Helps job seekers instantly see how well their resume matches a job description, so they know exactly what to fix before applying.</li>
+        <li>Used the Google Gemini API to semantically compare resume and job-description text, turning that comparison into a clear compatibility score.</li>
+        <li>Built a recommendation engine on top of the Gemini output to flag specific skill gaps and suggest concrete improvements.</li>
+        <li>Built a full-stack file pipeline supporting PDF, DOCX, and TXT uploads with secure handling and cloud deployment on AWS.</li>
+      </ul>
+    </div>
+
+    <div class="project-entry">
+      <strong>Enterprise Recruitment Management System (<a href="https://karmik.carnationinfotech.com/" target="_blank" rel="noopener noreferrer">Karmik</a>)</strong>
+      <p class="tags">React.js · RESTful APIs · Agile</p>
+      <ul>
+        <li>A hiring platform that lets recruiters manage candidates from application through interview scheduling in one place, replacing manual tracking.</li>
+        <li>Built the React.js frontend end-to-end, wiring it to RESTful APIs with proper loading, error, and state handling so recruiters always see accurate, up-to-date candidate status.</li>
+      </ul>
+    </div>
+
+    <div class="project-entry">
+      <strong>Cloud-Native Financial Planning &amp; Expense Intelligence System</strong>
+      <p class="tags">React.js · JWT · RBAC · REST APIs</p>
+      <ul>
+        <li>Gives employees, managers, and finance admins the right level of visibility into company spending, from submitting an expense to approving a budget.</li>
+        <li>Implemented JWT-based Role-Based Access Control (RBAC) so each of the three user types sees a tailored view and can only take actions relevant to their role.</li>
+        <li>Built REST API-driven dashboards for budget-vs-actuals, monthly trends, approval workflows, and category-wise analytics.</li>
+      </ul>
+    </div>
+
+    <div class="project-entry">
+      <strong>Music Recommendation System Based on Facial Emotion</strong>
+      <p class="tags">Python · TensorFlow · OpenCV · React.js</p>
+      <ul>
+        <li>Reads a user's mood from their webcam and instantly recommends music to match how they're feeling, with a privacy-first design that stores no data.</li>
+        <li>Used OpenCV for real-time face detection and a TensorFlow-based emotion-classification model to infer emotion from live camera frames, feeding results into a responsive React.js interface that updates recommendations in real time.</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="job">
+      <div>
+        <strong>Bachelor of Engineering (B.E.)</strong>
+        <p class="meta">Model Institute of Engineering and Technology, Jammu</p>
+      </div>
+      <p class="meta">Aug 2023</p>
+    </div>
+
+    <h2>Certifications &amp; Training</h2>
+    <p class="muted">
+      <a href="https://drive.google.com/file/d/1dE4iMDU3e2bI1ncqhz3t4qRqzxUFXQaa/view?usp=sharing" target="_blank" rel="noopener noreferrer">Django-Python Training (APTRON)</a> ·
+      <a href="https://drive.google.com/file/d/1W2PvKlRBzex_VDO_YV6hxVFyDGB8Qcsu/view?usp=sharing" target="_blank" rel="noopener noreferrer">Python Certification (HackerRank)</a> ·
+      <a href="https://www.hackerrank.com/certificates/00259a9f4c8c" target="_blank" rel="noopener noreferrer">React Certification (HackerRank)</a> ·
+      <a href="https://drive.google.com/file/d/1CPJyJ7tso8vZ-TXYsphq7DwU17N8cLd1/view?usp=sharing" target="_blank" rel="noopener noreferrer">RPA Design &amp; Development</a> ·
+      <a href="https://drive.google.com/file/d/1UHP1LNFuqEI7Ptqe7XujYix7TDicYJG-/view?usp=sharing" target="_blank" rel="noopener noreferrer">Cloud Computing (NPTEL)</a>
+    </p>
+  </article>
+</body>
+</html>
