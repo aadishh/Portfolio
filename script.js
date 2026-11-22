@@ -192,13 +192,6 @@
     });
   });
 
-  document.querySelectorAll("[data-placeholder]").forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      showToast(link.getAttribute("data-placeholder") + " link is a placeholder");
-    });
-  });
-
   /* ------------------------------------------------------------------------
      Contact form — validated in the browser, then handed to the mail client
      ------------------------------------------------------------------------ */
